@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  template:
+    spec:
+      containers:
+      - name: my-app
+        env:
+        - name: SERVER_IP
+          value: "172.24.6.243"  # IP address for server1
+
